@@ -1,0 +1,58 @@
+Accessing Properties
+
+
+Dot Notation
+const person = {
+    name: "Rahul"
+};
+
+console.log(person.name);
+
+Output
+
+Rahul
+Bracket Notation
+console.log(person["name"]);
+
+Output
+Rahul
+
+When to use bracket notation?
+
+If property name is stored inside a variable.
+
+const key = "name";
+
+console.log(person[key]);
+
+
+4. Adding Properties
+person.age = 21;
+
+console.log(person);
+
+Output
+
+{
+ name:"Rahul",
+ age:21
+}
+5. Updating Properties
+person.age = 25;
+6. Deleting Properties
+delete person.age;
+
+30. Object References
+const a = {
+    x:1
+};
+
+const b = a;
+
+b.x=100;
+
+console.log(a.x);
+
+Output
+
+100

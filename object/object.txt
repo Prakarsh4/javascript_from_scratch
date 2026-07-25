@@ -1,0 +1,45 @@
+1. What is an Object?
+
+An object is a collection of key-value pairs.
+
+const person = {
+    name: "Prakarsh",
+    age: 20,
+    city: "Delhi"
+};
+
+console.log(person);
+
+Output
+
+{
+    name: "Prakarsh",
+    age: 20,
+    city: "Delhi"
+}
+
+Here,
+
+name → key
+"Prakarsh" → value
+Why Objects?
+
+Imagine storing information about a student.
+
+Without object
+
+const name = "Rahul";
+const age = 21;
+const cgpa = 8.5;
+
+Hard to manage.
+
+With object
+
+const student = {
+    name: "Rahul",
+    age: 21,
+    cgpa: 8.5
+};
+
+Everything stays together.

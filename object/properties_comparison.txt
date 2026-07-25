@@ -1,0 +1,45 @@
+26. Computed Property Names
+const key = "age";
+
+const obj = {
+    [key]:20
+};
+
+console.log(obj);
+
+Output
+
+{
+ age:20
+}
+27. Dynamic Property
+obj["course"]="BTech";
+28. Checking Property
+"name" in person
+
+Output
+
+true
+29. Object Comparison
+
+Wrong
+
+{} == {}
+
+Output
+
+false
+
+Because objects compare by reference.
+
+Correct
+
+const a = {};
+
+const b = a;
+
+console.log(a==b);
+
+Output
+
+true

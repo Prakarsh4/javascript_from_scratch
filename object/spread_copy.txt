@@ -1,0 +1,84 @@
+18. Spread Operator
+
+Copy Object
+
+const user = {
+    name:"Rahul",
+    age:20
+};
+
+const copy = {
+    ...user
+};
+
+Merge Objects
+
+const a = {
+    x:1
+};
+
+const b = {
+    y:2
+};
+
+const c = {
+    ...a,
+    ...b
+};
+19. Object.assign()
+const copy = Object.assign({},person); {}, iske baad jo bhi obj rahta hai wo sbb ek empty obj me jata hai. agar imp hua
+to ya to mdm refer kr lena ya 4:13min ka js wala chai with code pe akke dekh lena.
+
+Merge
+
+Object.assign(a,b);
+20. Shallow Copy
+const obj1 = {
+    a:1
+};
+
+const obj2 = obj1;
+
+Both point to same object.
+
+Changing one changes another.
+
+Correct Copy
+
+const obj2 = {...obj1};
+Both point to same object.
+
+Changing one changes another.
+
+Correct Copy
+
+const obj2 = {...obj1};
+21. Deep Copy
+
+Nested object problem
+
+const user = {
+    address:{
+        city:"Delhi"
+    }
+};
+
+const copy = {...user};
+
+copy.address.city="Noida";
+
+console.log(user.address.city);
+
+Output
+
+Noida
+
+Still linked.
+
+Modern Solution
+
+const copy = structuredClone(user);
+
+Older Solution (limitations)
+
+const copy = JSON.parse(JSON.stringify(user));

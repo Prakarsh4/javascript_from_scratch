@@ -1,0 +1,38 @@
+33. Property Shorthand
+
+Instead of
+
+const name = "Rahul";
+
+const obj = {
+    name:name
+};
+
+Use
+
+const obj = {
+    name
+};
+34. Method Shorthand
+
+Instead of
+
+const obj = {
+    greet:function(){
+        console.log("Hi");
+    }
+};
+
+Use
+
+const obj = {
+    greet(){
+        console.log("Hi");
+    }
+};
+35. Object vs Map
+Object	Map
+Keys are strings/symbols	Keys can be any type
+Faster for simple data	Better for frequent insert/delete
+JSON support	No direct JSON support
+Dot notation	map.get(key)

@@ -1,0 +1,31 @@
+2. Object.keys()
+
+Returns all keys.
+
+const obj = {
+    a:1,
+    b:2,
+    c:3
+};
+
+console.log(Object.keys(obj));
+
+Output
+
+["a","b","c"]
+13. Object.values()
+console.log(Object.values(obj));
+
+Output
+
+[1,2,3]
+14. Object.entries()
+console.log(Object.entries(obj));
+
+Output
+
+[
+ ["a",1],
+ ["b",2],
+ ["c",3]
+]

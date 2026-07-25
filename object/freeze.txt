@@ -1,0 +1,36 @@
+22. Freeze Object
+Object.freeze(person);
+
+Cannot
+
+add
+update
+delete
+
+properties.
+
+23. Seal Object
+Object.seal(person);
+
+Can update.
+
+Cannot
+(delete
+add)
+
+24. Optional Chaining
+
+Instead of
+
+user.address.city
+
+Do
+
+user?.address?.city
+
+Avoids errors if a property doesn't exist.
+
+25. Nullish Coalescing
+const city = user.city ?? "Delhi";
+
+Uses default only if value is null or undefined.
